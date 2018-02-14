@@ -12,8 +12,21 @@ namespace COMP2139___W2018___Lesson_2
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            SetActivePage();
+            SetCopyrightMessage();
+           
+        }
 
-            switch(Page.Title)
+        public void SetCopyrightMessage()
+        {
+            Copyright.InnerHtml = "&copy; Copyright " + DateTime.Now.Year;
+        }
+
+
+        public void SetActivePage()
+        {
+            Debug.WriteLine(Page.Title);
+            switch (Page.Title)
             {
                 case "Home":
                     Home.Attributes.Add("class", "nav-link active");

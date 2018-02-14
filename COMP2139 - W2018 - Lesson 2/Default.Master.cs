@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -12,6 +13,24 @@ namespace COMP2139___W2018___Lesson_2
         protected void Page_Load(object sender, EventArgs e)
         {
 
+            switch(Page.Title)
+            {
+                case "Home":
+                    Home.Attributes.Add("class", "nav-link active");
+                    break;
+                case "Products":
+                    Products.Attributes.Add("class", "nav-link active");
+                    break;
+                case "Services":
+                    Services.Attributes.Add("class", "nav-link active");
+                    break;
+                case "About Us":
+                    About.Attributes.Add("class", "nav-link active");
+                    break;
+                case "Contact Us":
+                    Contact.Attributes.Add("class", "nav-link active");
+                    break;
+            }
         }
     }
 }

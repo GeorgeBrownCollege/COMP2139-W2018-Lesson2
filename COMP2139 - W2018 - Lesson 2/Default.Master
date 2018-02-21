@@ -41,7 +41,7 @@
 </nav>
 
     <!-- this is where all content pages are injected -->
-    <form id="form1" runat="server">
+    <form id="PageForm" runat="server">
         <div class="container">
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>

@@ -26,13 +26,16 @@
                 <textarea runat="server" class="form-control" ID="Message" rows="3" placeholder="Enter Your Message Here..."></textarea>
             </div>
 
-            
-
-            <asp:Button runat="server" ID="SubmitButton" type="submit" CssClass="btn btn-success" Text="Send" OnClick="SubmitButton_Click" />
         </div>
     </div>
 
-
-
+    <div class="row justify-content-md-center">
+        <div class="col-md-offset-9 col-md-2 col-lg-2 col-sm-2">
+            <asp:Button runat="server" ID="SubmitButton" type="submit" CssClass="btn btn-success" Text="Send" OnClick="SubmitButton_Click" />
+        </div>
+        <div class="col-md-offset-9 col-md-2 col-lg-2 col-sm-2">
+            <asp:Button runat="server" ID="CancelButton" type="cancel" CssClass="btn btn-warning" Text="Cancel" OnClick="CancelButton_Click" />
+        </div>
+    </div>
 
 </asp:Content>

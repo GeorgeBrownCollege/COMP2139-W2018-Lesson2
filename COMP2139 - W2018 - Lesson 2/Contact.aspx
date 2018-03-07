@@ -6,19 +6,34 @@
         <div class="col-md-6 col-lg-4 col-sm-8">
             <h1>Contact Us</h1>
 
+            <div runat="server" ID="MessageArea">
+                <div class="form-group">
+                     <asp:RequiredFieldValidator CssClass="alert alert-warning" Display="Dynamic" ID="NameFieldValidator" runat="server" ErrorMessage="Name Text Field is Required" ControlToValidate="Name"></asp:RequiredFieldValidator>
+                </div>
+                <div class="form-group">
+                     <asp:RequiredFieldValidator CssClass="alert alert-warning" Display="Dynamic"  ID="ContactFieldValidator" runat="server" ErrorMessage="Contact Number Field is Required" ControlToValidate="ContactNumber"></asp:RequiredFieldValidator>
+                </div>
+                <div class="form-group">
+                    <asp:RequiredFieldValidator CssClass="alert alert-warning" Display="Dynamic"  ID="EmailFieldValidator" runat="server" ErrorMessage="Email Field is Required" ControlToValidate="Email"></asp:RequiredFieldValidator>
+                </div>
+            </div>
+
             <div class="form-group">
                 <label for="Name">Your Name</label>
-                <input runat="server" type="text" class="form-control" ID="Name" placeholder="e.g. John Smith" required>
+                <input runat="server" type="text" class="form-control" ID="Name" placeholder="e.g. John Smith">
+               
             </div>
 
             <div class="form-group">
                 <label for="ContactNumber">Contact Number</label>
-                <input runat="server" type="tel" class="form-control" ID="ContactNumber" placeholder=" e.g.(416) 555-5555" required>
+                <input runat="server" type="tel" class="form-control" ID="ContactNumber" placeholder=" e.g.(416) 555-5555" >
+                 
             </div>
 
             <div class="form-group">
                 <label for="Email">Email address</label>
-                <input runat="server" type="email" class="form-control" ID="Email" aria-describedby="emailHelp" placeholder="youremail@yourdomain.com" required>
+                <input runat="server" type="email" class="form-control" ID="Email" aria-describedby="emailHelp" placeholder="youremail@yourdomain.com" >
+                
             </div>
 
             <div class="form-group">

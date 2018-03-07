@@ -19,6 +19,24 @@ namespace COMP2139___W2018___Lesson_2
         {
             // instantiates new object of type UserModel
             this._userModel = new UserModel();
+
+            //MessageArea.Visible = false;
+
+            /*
+            if(IsPostBack)
+            {
+                Debug.WriteLine("PostBack");
+                if((!NameFieldValidator.IsValid) || (!ContactFieldValidator.IsValid) || (!EmailFieldValidator.IsValid))
+                {
+                    MessageArea.Visible = true;
+                }
+                else
+                {
+                    MessageArea.Visible = false;
+                }
+            }
+            */
+            
         }
 
         protected void SubmitButton_Click(object sender, EventArgs e)
